@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); /*font --> quicksand*/ 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Quicksand:wght@300&display=swap'); /*font --> cinzel*/
+
+/*@font-face{
+  font-family: 'ginebra'; 
+  src: url('../fonts/ginebra_font.ttf') format('truetype');
+}*/
+
+
+body{
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  margin: 0;
+  color: #d3c800;
+  text-align: center; /*abaixar mais o texto*/
+  font-family: 'Cinzel', serif;
+  font-variant: small-caps; /*deixar maiúsculo a letra*/
+  font-size: xxx-large; /*tamanho da letra*/
+  letter-spacing: 20px; /*espaçamento entre letras*/
+  /*word-spacing: 50px; espaçamento entre palavras*/
+  font-weight: normal; /*para alterar a espessura da fonte*/
+}
+h2{
+  font-family: 'Cinzel', serif;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+}
+p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.2em;
+  text-align: justify;
+  color: #ffffffab;
+}
+
+.conteiner{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 150px 450px 1fr 1fr;
+  grid-template-rows: 105px 400px 400px auto 66px;
+  grid-row-gap: 10px;
+}
+
+  .zoom{
+    overflow: hidden;
+  }
+    .zoom_img{
+      max-width: 100%;
+      -moz-transform: all 0.3s;
+      -webkit-transform: all 0.3s;
+      transition: all 0.3s;
+    }
+    .zoom:hover img{
+      -moz-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+  .img1{ /*cabeçalho*/
+    display: flex;
+    grid-row: 1 / span 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+    #bandeira{ /*cabeçalho*/
+      width: 100%;
+    }
+
+  .img2{ /*historia*/
+    display: flex;
+    grid-column: 1 / span 2;
+  }
+    #img2{ /*historia*/
+      width: 100%;
+    }
+
+  .img3{ /*cultura*/
+    display: flex;
+    grid-column: 3 / 5;
+  }
+    #img3{ /*cultura*/
+      width: 100%;
+    }
+
+  .img4{ /*beleza*/
+    display: flex;
+    grid-column: 1 / span 2;
+  }
+    #img4{ /*beleza*/
+      width: 100%;
+    }
+  .cabecalho{
+    grid-column: 2 / span 3;
+    padding: 10px;
+  }
+  .historia{
+    grid-column: 3 / 5;
+    padding: 48px 40px;
+  }
+  .cultura{
+    grid-row: 3 / 3;
+    grid-column: 1 / 3;
+    padding: 90px 40px;
+  }
+  .beleza{
+    grid-column: 3 / 5;
+    padding: 90px 40px;
+  }
+.footer{
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}

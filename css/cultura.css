@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap'); /*Playfair Display*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap'); /*DM Serif Display*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho-conteiner{
+    background-color: #1a2740;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+}
+    #img-cabecalho{
+        width: 150px;
+    }
+    #cabecalho-texto{
+        color: #e2e2e2;
+        font-family: 'Playfair Display', serif;
+        display: grid;
+        justify-self: center;
+    }
+
+.conteiner-corpo{
+    margin: auto;
+    padding-bottom: 15px;
+    max-width: 800px;
+}
+    img{
+        width: 390px;
+    }
+    li, p{
+        color: #333333;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        line-height: 1.7;
+    }
+    h3, h2{
+        color: #333333;
+        font-family: 'DM Serif Display', serif;
+        font-size: 24px;
+        font-variant: small-caps; 
+    }
+    .img{
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+        .figE{
+            margin-right: 5px;
+        }
+        .figD{
+            margin-left: 5px;
+        }
+        figcaption{
+            color: #333333;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+        }
+    .video{
+        display: flex;
+        justify-content: center;
+    }    
