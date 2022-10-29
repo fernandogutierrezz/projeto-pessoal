@@ -1,2 +1,2 @@
 # projeto-pessoal
- não responsivo
+ SITE NÃO RESPONSIVO!
