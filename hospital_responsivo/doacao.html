@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/cabecalho.css">
+    <link rel="stylesheet" href="estilo/primeiro_cadastro.css">
+    <link rel="stylesheet" href="estilo/doacao.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/login/ico2.png" alt="logo"></a>
+        <h1>Hospital Geral</h1>
+        <div id="conteiner-cabecalho">
+            <input type="checkbox" id="bt_menu">
+            <label for="bt_menu">&#9776;</label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="pagina_principal.html">Home</a></li>
+                    <li><a href="profissionais.html">Profissionais de saúde</a></li>
+                    <li><a href="planos.html">Planos de saúde</a></li>
+                    <li><a href="primeiro_cadastro.html">Primeiro cadastro</a></li>
+                    <li><a href="doacao.html">Doe sangue</a></li>
+                    <li><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section-doacao">
+            <h1>Importancia de ser um doador</h1>
+            <p>A doação de sangue é um gesto solidário de doar uma pequena quantidade do próprio sangue para salvar a vida de pessoas que se submetem a tratamentos e intervenções médicas de grande porte e complexidade, como transfusões, transplantes, procedimentos oncológicos e cirurgias. Além de pessoas que submetem a procedimentos e intervenções médicas, o sangue também é indispensável para que pacientes com doenças crônicas graves - como Doença Falciforme e Talassemia - possam viver por mais tempo e com mais qualidade, além de ser de vital importância para tratar feridos em situações de emergência ou calamidades.</p>
+            <br>
+            <p>Uma única doação pode salvar até quatro vidas. Um simples gesto de amor e solidariedade pode gerar muitos sorrisos. Faça sua parte, independentemente de parentesco entre o doador e quem receberá a doação. O sangue é insubstituível e sem ele é impossível viver. Por isso, o Ministério da Saúde reforça periodicamente a importância de os brasileiros adotarem a cultura solidária da doação regular e espontânea de sangue.</p>
+        </section>
+        <section id="conteiner-tabela">
+            <table>
+                <thead>
+                    <tr>              
+                        <td colspan="9">Tabela de doadores dos ultimos 5 meses.</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>A+</td>
+                        <td>B+</td>
+                        <td>AB+</td>
+                        <td>O+</td>
+                        <td>A-</td>
+                        <td>B-</td>
+                        <td>AB-</td>
+                        <td>O-</td>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="ndoadores">n° doadores</td>
+                        <td>530.000</td>
+                        <td>530.000</td>
+                        <td>530.000</td>
+                        <td>530.000</td>
+                        <td>530.000</td>
+                        <td>530.000</td>
+                        <td>530.000</td>
+                        <td>530.000</td> 
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="conteiner-form">
+            <form>
+                <label for="nomecompleto"><strong>*</strong> Nome completo:</label>
+                <input type="text" id="nomecompleto" class="input-padrao" maxlength="60" required>
+
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <label for="nomerua"><strong>*</strong> Rua:</label>
+                    <input type="text" id="nomerua" class="input-padrao" maxlength="40" required> 
+
+                    <label for="numerocasa"><strong>*</strong> N° da casa:</label>
+                    <input type="text" id="numerocasa" class="input-padrao" maxlength="5" required> 
+
+                    <label for="estado"><strong>*</strong> Estado</label>
+                    <select name="" id="estado">
+                        <option value=""></option>
+                        <option value="">AC</option>
+                        <option value="">AL</option>
+                        <option value="">AP</option>
+                        <option value="">AM</option>
+                        <option value="">BA</option>
+                        <option value="">CE</option>
+                        <option value="">DF</option>
+                        <option value="">ES</option>
+                        <option value="">GO</option>
+                        <option value="">MA</option>
+                        <option value="">MT</option>
+                        <option value="">MS</option>
+                        <option value="">MG</option>
+                        <option value="">PA</option>
+                        <option value="">PB</option>
+                        <option value="">PR</option>
+                        <option value="">PE</option>
+                        <option value="">PI</option>
+                        <option value="">RJ</option>
+                        <option value="">RN</option>
+                        <option value="">RS</option>
+                        <option value="">RO</option>
+                        <option value="">RR</option>
+                        <option value="">SC</option>
+                        <option value="">SP</option>
+                        <option value="">SE</option>
+                        <option value="">TO</option>
+                    </select>
+                </fieldset>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" class="input-padrao" maxlength="50" placeholder="exeplo@email.com">
+
+                <label for="telefone"><strong>*</strong> Telefone:</label>
+                <input type="tel" id="Telefone" class="input-padrao" required maxlength="11" placeholder="(XX) XXXXX-XXXX">
+
+                <label class="checkbox"><input type="checkbox" checked >Enviar</label>
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

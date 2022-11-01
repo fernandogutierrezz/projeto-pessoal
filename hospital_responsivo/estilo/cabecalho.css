@@ -1,0 +1,111 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: linear-gradient(90deg, #0081ff, #0ce8a2, #01FFF8);
+    height: 233px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 2px 7px 0px #00000052;
+}
+img{
+    width: 200px;
+}
+header h1{
+    position: absolute;
+    top: 75px;
+    left: 210px;
+    font-size: 30px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: normal;
+}
+#conteiner-cabecalho{
+    position: absolute;
+    top: 195px;
+}
+.menu{
+    width: 100%;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+.menu ul li{
+    width: 195px;
+    float: left;
+}
+.menu a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: #222;
+    text-shadow: 2px 3px 4px #00000052;
+}
+.menu a:hover{
+    background-color: rgba(34, 34, 34, 0.192);
+    color: #222;
+    border-radius: 8px 8px 0 0;
+}
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: #683b3b00;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+#bt_menu{
+    display: none;
+}
+label[for="bt_menu"]{
+    display: none;
+}
+@media(max-width: 850px){
+    header{
+        overflow: inherit;
+        height: 255px;
+    }
+    #bt_menu:checked ~ .menu{
+       margin-left: 0px; 
+    }
+    .menu{
+        position: fixed;
+        margin-left: -100%;
+        transition: all .4s;  
+    }
+    label[for="bt_menu"]{
+        display: block;
+    }
+    .menu ul li{
+        width: 100%;
+        float: none;
+        background: linear-gradient(90deg, #0081ff, #0ce8a2, #01FFF8);
+        border-bottom: solid 1px rgb(255, 255, 255);
+    }
+    .menu a:hover{
+        border-radius: 0 0 0 0;
+    }    
+}
+@media(max-width: 290px){
+    header h1{
+        font-size: 16px;
+        top: 95px;
+        left: 151px;
+    }
+    header img{
+        margin-top: 30px;
+        width: 55%;
+    }
+}    

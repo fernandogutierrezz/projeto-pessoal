@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/cabecalho.css">
+    <link rel="stylesheet" href="estilo/primeiro_cadastro.css">
+    <link rel="stylesheet" href="estilo/fale-conosco.css">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/login/ico2.png" alt="logo"></a>
+        <h1>Hospital Geral</h1>
+        <div id="conteiner-cabecalho">
+            <input type="checkbox" id="bt_menu">
+            <label for="bt_menu">&#9776;</label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="pagina_principal.html">Home</a></li>
+                    <li><a href="profissionais.html">Profissionais de saúde</a></li>
+                    <li><a href="planos.html">Planos de saúde</a></li>
+                    <li><a href="primeiro_cadastro.html">Primeiro cadastro</a></li>
+                    <li><a href="doacao.html">Doe sangue</a></li>
+                    <li><a href="fale-conosco.html">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> 
+    <main class="conteiner-geral">
+        <section class="conteiner-form">
+            <form>
+                <label for="nomecompleto"><strong>*</strong> Nome completo:</label>
+                <input type="text" id="nomecompleto" class="input-padrao" maxlength="60" required>
+
+                <label for="email"><strong>*</strong> E-mail:</label>
+                <input type="email" id="email" class="input-padrao" maxlength="50" placeholder="exeplo@email.com" required>
+
+                <label for="telefone"><strong>*</strong> Telefone:</label>
+                <input type="tel" id="Telefone" class="input-padrao" required maxlength="11" placeholder="(XX) XXXXX-XXXX">
+
+                <fieldset>
+                    <label for="comentario"><strong>*</strong> Assunto</label>
+                    <select name="" id="comentario">
+                        <option value=""></option>
+                        <option value="">Elogios</option>
+                        <option value="">Sugestões</option>
+                        <option value="">Criticas</option>
+                    </select> 
+                </fieldset>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                <label class="checkbox"><input type="checkbox" checked >Enviar</label>
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+        </section>
+        <section class="redes-sociais">
+            <a href="https://www.facebook.com/saocamilooncologia/" target="_blank"><img src="img/logo/logo-faceboock.jpg" alt="rede social"></a>
+            <a href="https://www.instagram.com/saocamilooncologia/" target="_blank"><img src="img/logo/logo-instagram.jpg" alt="rede social"></a>
+            <a href="https://twitter.com/ibcconcologia" target="_blank"><img src="img/logo/logo-twitter.jpg" alt="rede social"></a>
+        </section>
+        <section class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mdK0MfS8WfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21502.567025871413!2d-46.60515763450594!3d-23.54831169034654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce593075371cad%3A0x198541bca3171c64!2sHospital%20S%C3%A3o%20Camilo%20Oncologia%20-%20Unidade%20Mooca!5e0!3m2!1spt-BR!2sbr!4v1664395198032!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+</body>
+</html>

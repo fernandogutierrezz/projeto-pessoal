@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+#conteiner-principal{
+    max-width: 1500px;
+    margin: auto;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.doutor{
+    width: 330px;
+    height: 540px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nome-doutor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+.descricao-medico{
+    width: auto;
+    height: 160px;
+    text-align: justify;
+    margin-top: 10px;
+    padding-top: 5px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+@media(max-width: 1050px){
+    #conteiner-principal{
+        grid-template-columns: 1fr 1fr ;
+        justify-items: center;
+    }    
+}
+@media(max-width: 700px){
+    #conteiner-principal{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }    
+}
+@media(max-width: 290px){
+    .descricao-medico{
+        width: 270px;
+        height: 200px;
+    }
+    .doutor{
+        width: 280px;
+        justify-content: flex-start;
+    }
+    .doutor img{
+        margin-left: 40px;
+    }
+    .nome-doutor{
+        margin-left: 48px;
+    }
+}
+
+

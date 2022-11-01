@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(235, 235, 235);
+}
+fieldset{
+    border: 0;
+    margin-bottom: 15px;
+}
+textarea{
+    margin-top: 15px;
+}
+.redes-sociais img{
+    width: 40px;
+    margin: 0 12.5px 0 12.5px;
+}
+.redes-sociais{
+    margin-top: 25px;
+    text-align: center;
+}
+.video, .mapa{
+    margin-top: 40px;
+    text-align: center;
+}
+.mapa{
+    margin-bottom: 40px;
+}
+@media(max-width: 630px){
+    .video, .mapa{
+        position: relative;
+        left: 28.5%;
+    }
+    .video{
+        position: absolute;
+        top: 854px;
+        width: 20%;
+    }
+    .video > iframe{
+        width: 270px;
+        height: auto;
+    }
+    .mapa{
+        position: absolute;
+        top: 1030px;
+    }
+    .mapa > iframe{
+        width: 270px;
+        height: auto;   
+    }
+}
+@media(max-width: 400px){
+    .video, .mapa{
+        position: relative;
+        left: 12%;
+    }
+    .video{
+        position: absolute;
+        top: 854px;
+        width: 20%;
+    }
+    .video > iframe{
+        width: 270px;
+        height: auto;
+    }
+    .mapa{
+        position: absolute;
+        top: 1030px;
+    }
+    .mapa > iframe{
+        width: 270px;
+        height: auto;   
+    }
+}
+@media(max-width: 290px){
+    .video, .mapa{
+        position: relative;
+    }
+    .video{
+        position: absolute;
+        top: 854px;
+        width: 20%;
+    }
+    .video > iframe{
+        width: 270px;
+        height: auto;
+    }
+    .mapa{
+        position: absolute;
+        top: 1030px;
+    }
+    .mapa > iframe{
+        width: 270px;
+        height: auto;   
+    }
+}

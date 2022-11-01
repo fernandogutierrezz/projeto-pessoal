@@ -1,0 +1,68 @@
+/*configurações gerais*/
+h1, p, td{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: white;
+}
+main{
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 50px;
+    margin-bottom: 30px;
+}
+/*texto doação*/
+section h1{
+    text-align: center;
+    margin: 20px;
+}
+section p{
+    font-size: 1.3em;
+    color: #222;
+}
+.section-doacao{
+    margin-bottom: 40px;
+}
+
+/*tabela*/
+#conteiner-tabela{
+    overflow-x: auto;
+}
+table{
+    border-collapse: collapse;
+    margin: auto;
+}
+table td{
+    border: 1px solid black;
+    font-size: 18px;  
+    padding: 0 5px;  
+}
+table thead td{
+    text-align: center;
+}
+table tbody td{
+    padding-left: 5px;
+}
+#ndoadores{
+    font-size: 13px;
+}
+
+ /*formulario*/
+.conteiner-form{
+    background-color: aquamarine;
+    margin-top: 20px;
+    padding: 0 5px;
+    border-radius: 10px;
+}
+fieldset{
+    border: 0;
+    padding-top: 10px;
+}
+@media(max-width: 290px){
+    main{
+        padding: 0 10px;
+    }
+    .conteiner-form{
+        padding:0;
+    }
+}

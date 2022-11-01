@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+:root{
+    --font1: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    margin: auto;
+    max-width: 1500px;
+    margin-bottom: 30px;
+}
+/*historia*/
+#conteiner-historia{  
+    flex: 1 1 50%;
+    padding: 15px 0 30px 15px;
+}
+#conteiner-historia strong{
+    color: rgb(22, 39, 61);
+}
+#conteiner-historia p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-indent: 10px;
+    font-family: var(--font1);
+    color: #222;
+}
+#conteiner-historia  h2{
+    font-size: 2em;
+    letter-spacing: 1px;
+    text-indent: 10px;
+    font-family: var(--font1);
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/*tabela*/
+#conteiner-tabela{
+    flex: 1 1 50%;
+    position: relative;
+    
+}
+#conteiner-tabela table{
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-left: 10px;
+    box-shadow: 1px 2px 7px 0px #0000007c;
+}
+#conteiner-tabela table td{
+    width: 125px;
+    border: 1px solid black;
+    font-family: var(--font1);
+    padding: 10px 0 10px 5px;
+}
+.cabecalho-dados-covid{
+    text-align: center;
+}
+.cor-tabela{
+    background-color: rgb(214, 231, 250);
+}
+.cor-cabecalho{
+    background-color: rgba(114, 250, 205, 0.548);
+    font-weight: bold;
+}
+#conteiner-tabela a{
+    text-decoration: none;
+    position: absolute;
+    left: 11px;
+    top: 355px;  
+    font-family: var(--font1);
+    
+}
+@media(max-width: 900px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }     
+    #conteiner-tabela table{
+        border-collapse: collapse;
+        margin: auto;
+    } 
+    #conteiner-tabela a{
+        left: 112px;
+        top: 345px;  
+        padding-bottom: 30px;
+    }      
+}
+@media(max-width: 290px){
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    } 
+    #conteiner-tabela{
+        overflow-x: auto;
+    }    
+    #conteiner-tabela a{
+        left: 9px;
+        top: 365px;  
+    }  
+    #conteiner-historia{  
+        padding: 15px 0 15px 0;
+    } 
+}
