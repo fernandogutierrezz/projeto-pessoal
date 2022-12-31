@@ -16,10 +16,10 @@ The designs were created to the following widths:
 
 ### Neutral
 
-Off-white: hsl(36, 100%, 99%)
+Off-white: hsl(36, 100%, 99%) texto aside
 Grayish blue: hsl(233, 8%, 79%)
-Dark grayish blue: hsl(236, 13%, 42%)
-Very dark blue: hsl(240, 100%, 5%)
+Dark grayish blue: hsl(236, 13%, 42%) cor menu e textos
+Very dark blue: hsl(240, 100%, 5%) fundo aside
 
 ## Typography
 

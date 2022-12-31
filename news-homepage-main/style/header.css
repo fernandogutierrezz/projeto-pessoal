@@ -1,0 +1,16 @@
+.conteiner-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 55px 0px;
+}
+.conteiner-nav{
+    display: flex;
+    gap: 35px;
+}
+.nav-itens{
+    font-size: 15px;
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+}

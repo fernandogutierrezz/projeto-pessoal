@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');/*font-family: 'Inter', sans-serif;*/
+ body{
+    font-family: 'Inter', sans-serif;
+ }
+ body, nav, header, main, div, p, a, h1, h2, img, button, footer{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+ }
